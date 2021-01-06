@@ -1,0 +1,67 @@
+{% extends "/public_template.html" %}
+
+{% block main %}
+<div class="container" style="padding-right: 5px; padding-left: 25px; padding-top: 10px; padding-bottom: 25px; width: 450px;">
+  <div class="row">
+    <div class="col" style="
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+    width: 200px;
+    background-color:lightgrey;">
+      <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <h6>Enter the Prodcut To Analysis</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <input placeholder="Enter Search Key" style="height:30px;width:300px;font-size:12pt;" type="text" id="searchText" name="searchText">
+                </div>
+                <div class="col-sm-4" style = "padding-left: 40px;">
+                    <button type="submit" style="background-color: #0033a0;  height : 30px; font-size: 14px; text-align: center;  border-color: #0033a0;" class="btn btn-primary">Process</button>
+                </div>
+            </div> 
+        </div> 
+      </form>
+    </div>
+  </div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <h2 style="padding-left: 250px;">Sentiment Analysis Result for - {{input}}</h2>
+    </div>
+    <br><br>
+    <div class="row" style="text-align: center;">
+        <div class="col-sm-4" >WordCloud</div>
+        <div class="col-sm-4">Plot</div>
+        <div class="col-sm-4">PlotPie</div>
+    </div>
+    <div class="row" style="text-align: center;">
+        <div class="col-sm-4" >
+            <img src="../img/wordCloud.png" alt="wordCloud" width="500" height="600">
+        </div>
+        <div class="col-sm-4">
+            <img src="C:/Users/Balra/Desktop/TSA_Demo/img/plot.png" alt="Plot" width="500" height="600">
+        </div>
+        <div class="col-sm-4">
+            <img src="C:/Users/Balra/Desktop/TSA_Demo/img/plotPie.png" alt="PlotPie" width="500" height="600">
+        </div>
+    </div>
+    <div class="row" style="text-align: center;">
+        <div class="col-sm-4" >.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+    </div>
+    <div class="row" style="text-align: center;">
+        <div class="col-sm-4" >.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+    </div>
+</div>
+{% endblock %}
