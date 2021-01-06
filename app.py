@@ -17,12 +17,7 @@ plt.style.use('fivethirtyeight')
 
 # %matplotlib inline
 
-
-
-
 app = Flask(__name__)
-
-
 
 @app.route('/', methods=["GET", "POST"])
 def index():
